@@ -36,9 +36,15 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: |
           git clone "https://github.com/$SOURCE_REPO" -b master source
+          pwd
+          ls
           mkdir myconf
           cd myconf
+          pwd
+          ls
           git clone "https://github.com/xzhower/Actions-lede-17.01.4" -b master source 
+          pwd
+          ls
           cp .config.hq55 ../conf/.config.hq55
 
       - name: Set environment variables
