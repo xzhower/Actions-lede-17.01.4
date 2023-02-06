@@ -38,22 +38,28 @@ jobs:
           git clone "https://github.com/$SOURCE_REPO" -b master source
           echo "PWD:"
           pwd
-          echo "LS:"
-          ls -al
+          echo "LS -al source:"
+          ls -al source
+          echo "LS -al source/conf/:"
+          ls -al source/conf
+          
           mkdir myconf
           cd myconf
           echo "PWD:"
           pwd
-          echo "LS:"
+          echo "LS -al:"
           ls -al
           git clone "https://github.com/xzhower/Actions-lede-17.01.4" -b master source 
           echo "PWD:"
           pwd
-          echo "LS -al source*:"
+          echo "LS -al *:"
           ls -al *
+          echo "LS -al source:"
           ls -al source
 
           cp source/.config.hq55 ../source/conf/.config.hq55
+          echo "ls -al ../source/conf/.config.hq55"
+          ls -al ../source/conf/.config.hq55
 
       - name: Set environment variables
         run: |
