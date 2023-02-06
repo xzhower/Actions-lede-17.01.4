@@ -49,9 +49,11 @@ jobs:
           git clone "https://github.com/xzhower/Actions-lede-17.01.4" -b master source 
           echo "PWD:"
           pwd
-          echo "LS -al *:"
+          echo "LS -al source*:"
           ls -al *
-          cp .config.hq55 ../conf/.config.hq55
+          ls -al source
+
+          cp source/.config.hq55 ../source/conf/.config.hq55
 
       - name: Set environment variables
         run: |
