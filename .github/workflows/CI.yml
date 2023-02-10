@@ -63,7 +63,7 @@ jobs:
           ls -l  ../source/include/target.mk
           
           rm  ../source/include/target.mk
-          ls -l  ../source/include/target.mk
+          ls -l  ../source/include/
           cp source/target.mk ../source/include/target.mk
           ls -l  ../source/include/target.mk
 
