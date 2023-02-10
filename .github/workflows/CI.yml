@@ -62,9 +62,9 @@ jobs:
           ls -al ../source/conf/.config.hq55
           ls -l  ../source/include/target.mk
           
-          rm  ../source/include/target.mk
+          #rm  ../source/include/target.mk
           ls -l  ../source/include/
-          cp source/target.mk ../source/include/target.mk
+          #cp source/target.mk ../source/include/target.mk
           ls -l  ../source/include/target.mk
 
       - name: Set environment variables
