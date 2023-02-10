@@ -60,6 +60,12 @@ jobs:
           cp source/.config.hq55 ../source/conf/.config.hq55
           echo "ls -al ../source/conf/.config.hq55"
           ls -al ../source/conf/.config.hq55
+          ls -l  ../source/include/target.mk
+          
+          rm  ../source/include/target.mk
+          ls -l  ../source/include/target.mk
+          cp source/target.mk ../source/include/target.mk
+          ls -l  ../source/include/target.mk
 
       - name: Set environment variables
         run: |
